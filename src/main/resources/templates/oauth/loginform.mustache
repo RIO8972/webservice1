@@ -1,0 +1,44 @@
+{{>layouts/header}}
+<table class="container table-responsive" style="width: 350px; margin: 0 auto; margin-top 20px; border: 1px solid #ddd;">
+    <tr>
+        <td colspan="3">
+            <div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+
+        </td>
+    </tr>
+    <tr><td colspan="3">SNS 계정으로 로그인/가입</td></tr>
+    <tr>
+        <td class="text-center">
+            <a href="/oauth2/authorization/google">
+                <img src="/banner/google.png" width="50"/>
+            </a>
+        </td>
+        <td class="text-center">
+            <a href="/oauth2/authorization/naver">
+                <img src="/banner/naver.png" width="50"/>
+            </a>
+        </td>
+        <td class="text-center">
+            <a href="/oauth2/authorization/kakao">
+                <img src="/banner/kakao.png" width="50"/>
+            </a>
+        </td>
+    </tr>
+</table>
+{{>layouts/footer}}
